@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chapter 5: jQuery for Designers</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/colorbox.css">
+</head>
+<body>
+<header id="page-header">
+	  <h1>Ireland: The Emerald Isle</h1>
+
+	  <form action="#" id="login-form">
+	  	 <div><label for="username">Username:</label><input type="text" id="username" placeholder="Username" /></div>
+	  	 <div><label for="password">Password</label><input type="password" id="password" placeholder="Paddword" /></div>
+	  	 <div><input type="submit" value="Login In"</div>
+	  </form> 
+	  <script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.colorbox-min.js"></script>
+	<script type="text/javascript">
+       var form=$('#login-form');
+
+       form.hide();
+       form.before('<a href="#login-form" id="login-link">Login</a> ');
+       $('#login-link').colorbox({
+       	width:'400px',
+       	inline:true,
+       	content:$(this).attr('href'),
+       	scrolling:false,
+       	onOpen:function(){form.show();},
+       	onComplete:function(){$.colorbox.resize();},
+       	onCleanup:function(){form.hide();}
+       })
+	</script>
+</heade>
+</body>

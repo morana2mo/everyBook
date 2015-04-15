@@ -1,0 +1,488 @@
+/* Reset --------------------------------------------------------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+	 v2.0 | 20110126
+	 License: none (public domain)
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /Reset -------------------------------------------------------------------------------------- */
+
+/* Elements ------------------------------------------------------------------------------------ */
+
+body {
+	background: #3b2f33;
+	color: #f2eeef;
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+	font-size: 100%;
+	margin: 1em auto;
+	max-width: 58em;
+	padding: 0 1em;
+}
+
+a {
+	color: #a0d468;
+}
+
+/* /Elements ----------------------------------------------------------------------------------- */
+
+/* Classes ------------------------------------------------------------------------------------- */
+
+.box {
+	background: white;
+	border-radius: 7px;
+	color: #444;
+	padding: 1em 2.25em;
+}
+
+/* /Classes ------------------------------------------------------------------------------------ */
+
+/* Basic Typography ---------------------------------------------------------------------------- */
+
+.content p {
+	line-height: 1.5;
+	margin: 1.125em 0;
+}
+
+.content h3 {
+	font-size: 1.5em;
+	line-height: 1.125;
+	margin: 1.125em 0 0.5em 0;
+}
+
+.content h2 {
+	font-size: 2.25em;
+	line-height: 1.125;
+	margin: 1.125em 0 0.5em 0;
+}
+
+.content h1 {
+	font-size: 3.375em;
+	line-height: 1.125;
+	margin: 1.125em 0 0.5em 0;
+}
+
+.content ul {
+	list-style-type: circle;
+	margin: 1.125em;
+}
+
+.content ol {
+	list-style-type: decimal;
+	margin: 1.125em;
+}
+
+.content li {
+	line-height: 1.5;
+	margin: 0.5em;
+}
+
+.content strong {
+	font-weight: bold;
+}
+
+.content em {
+	font-style: italic;
+}
+
+/* /Basic Typography --------------------------------------------------------------------------- */
+
+/* Sources ------------------------------------------------------------------------------------- */
+
+.sources {
+	color: #6a555c;
+	margin-top: 2.25em;
+}
+
+.sources h3 {
+	margin-bottom: 1.125em;
+}
+
+.sources a {
+	color: #6a555c;
+}
+
+.sources a:hover {
+	color: #7d646c;
+}
+
+.source-list {
+	line-height: 1.5;
+}
+
+/* /Sources ------------------------------------------------------------------------------------ */
+
+/* Navigation Universal ------------------------------------------------------------------------ */
+
+/* General */
+
+.sf-menu {
+	background: white;
+}
+
+.sf-menu:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+/* /General */
+
+/* Level 1 */
+
+.sf-menu li {
+	position: relative;
+}
+
+.sf-menu li:hover {
+	background: #a0d468;
+}
+
+.sf-menu a {
+	color: #444;
+	display: block;
+	padding: 1.5em 1em;
+	position: relative;
+	text-decoration: none;
+}
+
+.sf-menu a:hover {
+	background: #a0d468;
+	color: white;
+}
+
+/* /Level 1 */
+
+/* Level 2 */
+
+.sf-menu ul {
+	background: #a0d468;
+	z-index: 99;
+}
+
+.sf-menu ul li:hover {
+	background: #8cc152;
+}
+
+.sf-menu ul a:hover {
+	background: #8cc152;
+}
+
+.sf-menu li:hover > ul {
+	display: block;
+}
+
+/* /Level 2 */
+
+/* Level 3 */
+
+.sf-menu ul ul {
+	background: #8cc152;
+}
+
+.sf-menu ul ul li:hover {
+	background: #7bb140;
+}
+
+.sf-menu ul ul a:hover {
+	background: #7bb140;
+}
+
+/* /Level 3 */
+
+/* /Navigation Universal ----------------------------------------------------------------------- */
+
+/* Navigation Full ----------------------------------------------------------------------------- */
+
+/* General */
+
+nav.super-nav {
+	margin: 2em 1em;
+}
+
+.super-nav .sf-menu {
+	border-radius: 7px;
+}
+
+/* /General */
+
+/* Level 1 */
+
+.super-nav .sf-menu li {
+	white-space: nowrap;
+}
+
+.super-nav .sf-menu > li:first-child,
+.super-nav .sf-menu > li:first-child a {
+	border-top-left-radius: 7px;
+}
+
+.super-nav .sf-menu > li {
+	float: left;
+}
+
+/* /Level 1 */
+
+/* Level 2 */
+
+.super-nav .sf-menu ul {
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	display: none;
+	left: 0;
+	min-width: 12em;
+	position: absolute;
+	top: 100%;
+}
+
+.super-nav .sf-menu ul > li:last-child,
+.super-nav .sf-menu ul > li:last-child a {
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+/* /Level 2 */
+
+/* Level 3 */
+
+.super-nav .sf-menu ul ul {
+	border-top-right-radius: 7px;
+	top: 0;
+	left: 100%;
+}
+
+.super-nav .sf-menu ul ul > li:first-child,
+.super-nav .sf-menu ul ul > li:first-child a {
+	border-top-right-radius: 7px;
+}
+
+.super-nav .sf-menu ul ul > li:last-child,
+.super-nav .sf-menu ul ul > li:last-child a {
+	border-bottom-right-radius: 7px;
+}
+
+/* /Level 3 */
+
+/* Extras */
+
+.super-nav .sf-arrows .sf-with-ul {
+	padding-right: 2.5em;
+}
+
+.super-nav .sf-arrows .sf-with-ul:after {
+	border: 5px solid transparent;
+	border-top-color: #444;
+	content: '';
+	height: 0;
+	margin-top: -3px;
+	position: absolute;
+	right: 1em;
+	top: 50%;
+	width: 0;
+}
+
+.super-nav .sf-arrows > li > .sf-with-ul:focus:after,
+.super-nav .sf-arrows > li:hover > .sf-with-ul:after {
+	border-top-color: white;
+}
+
+.super-nav .sf-arrows ul .sf-with-ul:after {
+	margin-top: -5px;
+	margin-right: -3px;
+	border-color: transparent;
+	border-left-color: #e7f2dc;
+}
+
+.super-nav .sf-arrows ul li > .sf-with-ul:focus:after,
+.super-nav .sf-arrows ul li:hover > .sf-with-ul:after {
+	border-left-color: white;
+}
+
+/* /Extras */
+
+/* /Navigation Full ---------------------------------------------------------------------------- */
+
+/* Mean Menu */
+
+a.meanmenu-reveal {
+	display: none;
+}
+
+.mean-container .mean-bar {
+	background: white;
+	padding: 0.222em 0;
+	min-height: 2.531em;
+	position: relative;
+	width: 100%;
+	z-index: 999999;
+}
+
+.mean-container a.meanmenu-reveal {
+	color: #444;
+	cursor: pointer;
+	display: block;
+	font-size: 18px;
+	height: 1.5em;
+	line-height: 1.5;
+	padding: 13px 13px 11px 13px;
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+	text-indent: -9999em;
+	top: 0;
+	width: 1.5em;
+}
+
+.mean-container a.meanmenu-reveal span {
+	background: #444;
+	display: block;
+	height: 0.198em;
+	margin-top: 0.198em;
+	width: 100%;
+}
+
+.mean-container .mean-nav {
+	background: white;
+	margin-top: 2.25em;
+	width: 100%;
+}
+
+.mean-container .mean-nav ul {
+	width: 100%;
+}
+
+.mean-container .mean-nav ul li {
+	position: relative;
+	width: 100%;
+}
+
+.mean-container .mean-nav ul li:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.mean-container .mean-nav ul li a {
+	border-bottom: 1px solid rgba(160, 212, 104, 0.3);
+	color: #444;
+	display: block;
+	padding: 1em 5%;
+	text-align: left;
+	text-decoration: none;
+	width: 90%;
+}
+
+.mean-container .mean-nav ul li:hover a,
+.mean-container .mean-nav ul li a:hover {
+	color: white;
+}
+
+.mean-container .mean-nav ul li li a {
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	padding: 1em 10%;
+	width: 80%;
+}
+
+.mean-container .mean-nav ul li.mean-last a {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.mean-container .mean-nav ul li li li a {
+	width: 70%;
+	padding: 1em 15%;
+}
+
+.mean-container .mean-nav ul li li li li a {
+	width: 60%;
+	padding: 1em 20%;
+}
+
+.mean-container .mean-nav ul li li li li li a {
+	width: 50%;
+	padding: 1em 25%;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+	border: none;
+	height: 1.688em;
+	padding: 0.75em;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 1.688em;
+	z-index: 2;
+}
+
+.mean-container .mean-nav ul li a.mean-expand:hover {
+	background: none;
+}
+
+.mean-container .mean-push {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+.mean-nav .wrapper {
+	width: 100%;
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.mean-container .mean-bar, .mean-container .mean-bar * {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* /Navigation --------------------------------------------------------------------------------- */

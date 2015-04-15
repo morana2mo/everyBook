@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Chapter X: jQuery for Designers</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/colorbox.css">
+</head>
+<body class="content">
+	<h3>one-Page Web Design Gallery</h3>
+	<ul>
+		<li><a href="http://www.baidu.com" rel="gallery">baidu</a></li>
+		<li><a href="http://www.taobao.com" rel="gallery">taobao</a></li>
+		<li><a href="http://www.gougou.com" rel="gallery">gougou</a></li>
+	</ul>
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.colorbox-min.js"></script>
+	<script type="text/javascript">
+	 $('a[rel="gallery"]').colorbox({
+	 	iframe:true,
+	 	width:'90%',
+	 	height:'90%',
+	 	current:'Website {current} of {total}'
+	 })
+	</script>
+</body>

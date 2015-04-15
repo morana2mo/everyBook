@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="jsOff">
+<head>
+  <title>Chapter 11: Reacting to Scrolling</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<section class="scrollblock" id="monday">
+	<div class="day">Monday</div>
+	<div class="forecast">72&deg; Sunny</div>
+	<div class="icon"><img src="images/Sun.svg" alt="Sunny" width="300" height="300"></div>
+</section>
+
+<section class="scrollblock" id="moneve">
+	<div class="day">Monday evening</div>
+	<div class="forecast">62&deg; Clear</div>
+	<div class="icon"><img src="images/Moon.svg" alt="Clear" width="300" height="300"></div>
+</section>
+
+<section class="scrollblock" id="tueday">
+	<div class="day">Tuesday</div>
+	<div class="forecast">67&deg; Cloudy</div>
+	<div class="icon"><img src="images/Cloud.svg" alt="Cloudy" width="300" height="300"></div>
+
+	<div class="cloud-layer" id="cloud-layer-back">
+		<img src="images/Cloud.svg" alt="Cloudy" width="100" height="100" id="bcloud1">
+		<img src="images/Cloud.svg" alt="Cloudy" width="150" height="150" id="bcloud2">
+		<img src="images/Cloud.svg" alt="Cloudy" width="125" height="125" id="bcloud3">
+		<img src="images/Cloud.svg" alt="Cloudy" width="112" height="112" id="bcloud4">
+		<img src="images/Cloud.svg" alt="Cloudy" width="75" height="75" id="bcloud5">
+		<img src="images/Cloud.svg" alt="Cloudy" width="140" height="140" id="bcloud6">
+	</div>
+
+	<div class="cloud-layer" id="cloud-layer-mid">
+		<img src="images/Cloud.svg" alt="Cloudy" width="150" height="150" id="mcloud1">
+		<img src="images/Cloud.svg" alt="Cloudy" width="225" height="225" id="mcloud2">
+		<img src="images/Cloud.svg" alt="Cloudy" width="188" height="188" id="mcloud3">
+		<img src="images/Cloud.svg" alt="Cloudy" width="169" height="169" id="mcloud4">
+		<img src="images/Cloud.svg" alt="Cloudy" width="113" height="113" id="mcloud5">
+		<img src="images/Cloud.svg" alt="Cloudy" width="207" height="207" id="mcloud6">
+	</div>
+
+	<div class="cloud-layer" id="cloud-layer-front">
+		<img src="images/Cloud.svg" alt="Cloudy" width="200" height="200" id="fcloud1">
+		<img src="images/Cloud.svg" alt="Cloudy" width="300" height="300" id="fcloud2">
+		<img src="images/Cloud.svg" alt="Cloudy" width="250" height="250" id="fcloud3">
+		<img src="images/Cloud.svg" alt="Cloudy" width="225" height="225" id="fcloud4">
+		<img src="images/Cloud.svg" alt="Cloudy" width="150" height="150" id="fcloud5">
+		<img src="images/Cloud.svg" alt="Cloudy" width="275" height="275" id="fcloud6">
+	</div>
+</section>
+
+<section class="scrollblock" id="tueeve">
+	<div class="day">Tuesday evening</div>
+	<div class="forecast">58&deg; Rainy</div>
+	<div class="icon"><img src="images/Cloud-Drizzle-Moon.svg" alt="Rainy Night" width="300" height="300"></div>
+</section>
+
+<section class="scrollblock" id="wedday">
+	<div class="day">Wednesday</div>
+	<div class="forecast">69&deg; Windy</div>
+	<div class="icon" id="wind"><img src="images/Cloud-Wind.svg" alt="Cloudy Windy" width="300" height="300"></div>
+</section>
+
+<section class="scrollblock" id="wedeve">
+	<div class="day">Wednesday evening</div>
+	<div class="forecast">57&deg; Clearing</div>
+	<div class="icon"><img src="images/Cloud-Fog-Moon.svg" alt="Clearing" width="300" height="300"></div>
+</section>
+
+<section class="scrollblock" id="credits">
+	<div class="sources">
+		<h3>Sources</h3>
+		<ul class="source-list">
+			<li><a href="http://adamwhitcroft.com/climacons/">Climicons by Adam Whitcroft</a></li>
+			<li><a href="http://commons.wikimedia.org/wiki/File:Night_Sky_Stars_Trees_02.jpg">Starry Sky Photo by Michael J Bennett</a></li>
+			<li><a href="http://commons.wikimedia.org/wiki/File:Cloudy_sky_.jpg">Cloudy Sky by ALY41980</a></li>
+			<li><a href="http://commons.wikimedia.org/wiki/File:Sunset_l%C3%BCdenscheid_germany.jpg">Sunset in Germany by Pro2</a></li>
+		</ul>
+	</div>
+</section>
+
+
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.scrollorama.js"></script>
+<script src="scripts/scripts.js"></script>
+
+</body>
+</html>

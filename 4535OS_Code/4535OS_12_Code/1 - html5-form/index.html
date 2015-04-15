@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chapter 12: jQuery for Designers</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<form action="#" id="account-form">
+	<fieldset>
+		<legend>My Account</legend>
+		<p>
+			<label for="username">Username</label>
+			<input type="text" name="username" id="username" placeholder="Choose a username&hellip;">
+		</p>
+		<p>
+			<label for="password">Password</label>
+			<input type="text" name="password" id="password" placeholder="Choose a secure password&hellip;">
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>About Me</legend>
+		<p>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="First Last">
+		</p>
+		<p>
+			<label for="email">Email address</label>
+			<input type="email" id="email" name="email" placeholder="you@example.com">
+		</p>
+		<p>
+			<label for="website">Website</label>
+			<input type="url" id="website" name="website" placeholder="Don't forget the http://&hellip;">
+		</p>
+		<p>
+			<label for="birthdate">Birth date</label>
+			<input type="date" id="birthdate" name="birthdate">
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>Beverage Info</legend>
+		<fieldset>
+			<legend>Select your favorite beverage(s)</legend>
+			<p>Please select at least three but no more than six beverages.</p>
+			<ul>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-water" value="bev-water">
+					<label for="bev-water">Water</label>
+				</li>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-juice" value="bev-juice">
+					<label for="bev-juice">Juice</label>
+				</li>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-cider" value="bev-cider">
+					<label for="bev-cider">Cider</label>
+				</li>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-soda" value="bev-soda">
+					<label for="bev-soda">Soda</label>
+				</li>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-milk" value="bev-milk">
+					<label for="bev-milk">Milk</label>
+				</li>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-coffee" value="bev-coffee">
+					<label for="bev-coffee">Coffee</label>
+				</li>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-tea" value="bev-tea">
+					<label for="bev-tea">Tea</label>
+				</li>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-hot-chocolate" value="bev-hot-chocolate">
+					<label for="bev-hot-chocolate">Hot Chocolate</label>
+				</li>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-beer" value="bev-beer">
+					<label for="bev-beer">Beer</label>
+				</li>
+				<li>
+					<input type="checkbox" name="favorites[]" id="bev-wine" value="bev-wine">
+					<label for="bev-wine">Wine</label>
+				</li>
+			</ul>
+		</fieldset>
+		<p>
+			<label for="days">How many days of the year do you drink a beverage?</label>
+			<input type="number" id="days" name="days" placeholder="How many days?">
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>Payment Info</legend>
+		<fieldset>
+			<legend>Credit Card Type</legend>
+			<ul>
+				<li>
+					<input type="radio" name="cc-type" id="cc-visa" value="cc-visa">
+					<label for="cc-visa">Visa</label>
+				</li>
+				<li>
+					<input type="radio" name="cc-type" id="cc-mastercard" value="cc-mastercard">
+					<label for="cc-mastercard">Mastercard</label>
+				</li>
+				<li>
+					<input type="radio" name="cc-type" id="cc-amex" value="cc-amex">
+					<label for="cc-amex">American Express</label>
+				</li>
+				<li>
+					<input type="radio" name="cc-type" id="cc-discover" value="cc-discover">
+					<label for="cc-discover">Discover</label>
+				</li>
+			</ul>
+		</fieldset>
+		<p>
+			<label for="cc-number">Credit card number</label>
+			<input type="text" name="cc-number" id="cc-number" placeholder="xxxx xxxx xxxx xxxx">
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<ul>
+			<li>
+				<input type="checkbox" name="tos" value="tos" id="tos">
+				<label for="tos">Click here to accept our terms of service</label>
+			</li>
+		</ul>
+		<p>
+			<input type="submit" value="Sign me up!">
+		</p>
+	</fieldset>
+</form>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

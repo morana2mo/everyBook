@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Chapter 4: jQuery for Designers</title>
+	<link rel="stylesheet" href="styles/superfish.css">
+	<link rel="stylesheet" href="styles/superfish-vertical.css">
+</head>
+<body>
+<div class="content">
+	<h1>Butterflies</h1>
+</div>
+<nav>
+     <ul id="sfNav" class="sf-menu sf-vertical">
+     	<li><a href="#">one</a>
+     		<ul>
+     			<li><a href="#">one1</a></li>
+     			<li><a href="#">one2</a></li>
+     			<li><a href="#">one3</a>
+     				<ul>
+     					<li><a href="#">one1</a></li>
+     				</ul>
+     			</li>
+     		</ul>
+     	</li>
+     	<li><a href="#">two</a>
+         <ul>
+     			<li><a href="#">one1</a></li>
+     			<li><a href="#">one2</a></li>
+     			<li><a href="#">one3</a>
+     				<ul>
+     					<li><a href="#">one1</a></li>
+     				</ul>
+     			</li>
+     		</ul>
+     	</li>
+     	<li><a href="#">three</a></li>
+     	<li><a href="#">four</a></li>
+     	<li><a href="#">five</a></li>
+     </ul>
+</nav>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/superfish.js"></script>
+<script type="text/javascript">
+	$(function(){$('#sfNav').superfish();})
+</script>
+</body>

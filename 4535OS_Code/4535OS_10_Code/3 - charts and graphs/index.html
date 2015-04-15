@@ -1,0 +1,422 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Chapter 10: Charts and Graphs</title>
+	<link rel="stylesheet" href="styles/visualize.css">
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="content">
+	<h1>A Mad Tea-Party</h1>
+</div>
+
+
+<table id="menu">
+	<caption>Menu Items</caption>
+	<thead>
+		<tr>
+			<td>Title</td>
+			<th scope="col">Total Items</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">Scones</th>
+			<td>23</td>
+		</tr>
+		<tr>
+			<th scope="row">Tea Sandwiches</th>
+			<td>18</td>
+		</tr>
+		<tr>
+			<th scope="row">Pastries</th>
+			<td>19</td>
+		</tr>
+		<tr>
+			<th scope="row">Tea</th>
+			<td>28</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<table id="eaten">
+	<caption>Who had what?</caption>
+	<thead>
+		<tr>
+			<td>&nbsp;</td>
+			<th scope="col">Scones</th>
+			<th scope="col">Tea Sandwiches</th>
+			<th scope="col">Pastries</th>
+			<th scope="col">Tea</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">Alice</th>
+			<td>1</td>
+			<td>3</td>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<th scope="row">Mad Hatter</th>
+			<td>0</td>
+			<td>6</td>
+			<td>3</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<th scope="row">Dormouse</th>
+			<td>1</td>
+			<td>6</td>
+			<td>0</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<th scope="row">March Hare</th>
+			<td>2</td>
+			<td>3</td>
+			<td>2</td>
+			<td>1</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="content">
+	<p>
+		There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion, resting their elbows on it, and talking over its head. &lsquo;Very uncomfortable for the Dormouse,&rsquo; thought Alice; &lsquo;only, as it&apos;s asleep, I suppose it doesn&apos;t mind.&rsquo;
+	</p>
+	<div id="pie-container" class="chart left"></div>
+	<p>
+		The table was a large one, but the three were all crowded together at one corner of it: &lsquo;No room! No room!&rsquo; they cried out when they saw Alice coming. &lsquo;There&apos;s PLENTY of room!&rsquo; said Alice indignantly, and she sat down in in a large arm-chair at one end of the table.</p>
+	<p>
+		&lsquo;Have some wine,&rsquo; the March Hare said in an encouraging tone.
+	</p>
+	<p>
+		Alice looked all round the table, but there was nothing on it but tea. &lsquo;I don&apos;t see any wine,&rsquo; she remarked.
+	</p>
+	<p>
+		&lsquo;There isn&apos;t any,&rsquo; said the March Hare.
+	</p>
+	<p>
+		&lsquo;Then it wasn&apos;t very civil of you to offer it,&rsquo; said Alice angrily.
+	</p>
+	<p>
+		&lsquo;It wasn&apos;t very civil of you to sit down without being invited,&rsquo; said the March Hare.
+	</p>
+	<p>
+		&lsquo;I didn&apos;t know it was YOUR table,&rsquo; said Alice; &lsquo;it&apos;s laid for a great many more than three.&rsquo;
+	</p>
+	<p>
+		&lsquo;Your hair wants cutting,&rsquo; said the Hatter. He had been looking at Alice for some time with great curiosity, and this was his first speech.
+	</p>
+	<p>
+		&lsquo;You should learn not to make personal remarks,&rsquo; Alice said with some severity; &lsquo;it&apos;s very rude.&rsquo;
+	</p>
+	<p>
+		The Hatter opened his eyes very wide on hearing this; but all he SAID was, &lsquo;Why is a raven like a writing-desk?&rsquo;
+	</p>
+	<p>
+		&lsquo;Come, we shall have some fun now!&rsquo; thought Alice. &lsquo;I&apos;m glad they&apos;ve begun asking riddles.&mdash;I believe I can guess that,&rsquo; she added aloud.
+	</p>
+	<p>
+		&lsquo;Do you mean that you think you can find out the answer to it?&rsquo; said the March Hare.
+	</p>
+	<p>
+		&lsquo;Exactly so,&rsquo; said Alice.
+	</p>
+	<p>
+		&lsquo;Then you should say what you mean,&rsquo; the March Hare went on.
+	</p>
+	<p>
+		&lsquo;I do,&rsquo; Alice hastily replied; &lsquo;at least&mdash;at least I mean what I say&mdash;that&apos;s the same thing, you know.&rsquo;
+	</p>
+	<p>
+		&lsquo;Not the same thing a bit!&rsquo; said the Hatter. &lsquo;You might just as well say that &ldquo;I see what I eat&rdquo; is the same thing as &ldquo;I eat what I see&rdquo;!&rsquo;
+	</p>
+	<p>
+		&lsquo;You might just as well say,&rsquo; added the March Hare, &lsquo;that &ldquo;I like what I get&rdquo; is the same thing as &ldquo;I get what I like&rdquo;!&rsquo;
+	</p>
+	<p>
+		&lsquo;You might just as well say,&rsquo; added the Dormouse, who seemed to be talking in his sleep, &lsquo;that &ldquo;I breathe when I sleep&rdquo; is the same thing as &ldquo;I sleep when I breathe&rdquo;!&rsquo;
+	</p>
+	<p>
+		&lsquo;It IS the same thing with you,&rsquo; said the Hatter, and here the conversation dropped, and the party sat silent for a minute, while Alice thought over all she could remember about ravens and writing-desks, which wasn&apos;t much.
+	</p>
+	<p>
+		The Hatter was the first to break the silence. &lsquo;What day of the month is it?&rsquo; he said, turning to Alice: he had taken his watch out of his pocket, and was looking at it uneasily, shaking it every now and then, and holding it to his ear.
+	</p>
+	<p>
+		Alice considered a little, and then said &lsquo;The fourth.&rsquo;
+	</p>
+	<p>
+		&lsquo;Two days wrong!&rsquo; sighed the Hatter. &lsquo;I told you butter wouldn&apos;t suit the works!&rsquo; he added looking angrily at the March Hare.
+	</p>
+	<p>
+		&lsquo;It was the BEST butter,&rsquo; the March Hare meekly replied.
+	</p>
+	<p>
+		&lsquo;Yes, but some crumbs must have got in as well,&rsquo; the Hatter grumbled: &lsquo;you shouldn&apos;t have put it in with the bread-knife.&rsquo;
+	</p>
+	<p>
+		The March Hare took the watch and looked at it gloomily: then he dipped it into his cup of tea, and looked at it again: but he could think of nothing better to say than his first remark, &lsquo;It was the BEST butter, you know.&rsquo;
+	</p>
+	<p>
+		Alice had been looking over his shoulder with some curiosity. &lsquo;What a funny watch!&rsquo; she remarked. &lsquo;It tells the day of the month, and doesn&apos;t tell what o&apos;clock it is!&rsquo;
+	</p>
+	<p>
+		&lsquo;Why should it?&rsquo; muttered the Hatter. &lsquo;Does YOUR watch tell you what year it is?&rsquo;
+	</p>
+	<p>
+		&lsquo;Of course not,&rsquo; Alice replied very readily: &lsquo;but that&apos;s because it stays the same year for such a long time together.&rsquo;
+	</p>
+	<p>
+		&lsquo;Which is just the case with MINE,&rsquo; said the Hatter.
+	</p>
+	<p>
+		Alice felt dreadfully puzzled. The Hatter&apos;s remark seemed to have no sort of meaning in it, and yet it was certainly English. &lsquo;I don&apos;t quite understand you,&rsquo; she said, as politely as she could.
+	</p>
+	<p>
+		&lsquo;The Dormouse is asleep again,&rsquo; said the Hatter, and he poured a little hot tea upon its nose.
+	</p>
+	<p>
+		The Dormouse shook its head impatiently, and said, without opening its eyes, &lsquo;Of course, of course; just what I was going to remark myself.&rsquo;
+	</p>
+	<p>
+		&lsquo;Have you guessed the riddle yet?&rsquo; the Hatter said, turning to Alice again.
+	</p>
+	<p>
+		&lsquo;No, I give it up,&rsquo; Alice replied: &lsquo;what&apos;s the answer?&rsquo;
+	</p>
+	<p>
+		&lsquo;I haven&apos;t the slightest idea,&rsquo; said the Hatter.
+	</p>
+	<p>
+		&lsquo;Nor I,&rsquo; said the March Hare.
+	</p>
+	<p>
+		Alice sighed wearily. &lsquo;I think you might do something better with the time,&rsquo; she said, &lsquo;than waste it in asking riddles that have no answers.&rsquo;
+	</p>
+	<p>
+		&lsquo;If you knew Time as well as I do,&rsquo; said the Hatter, &lsquo;you wouldn&apos;t talk about wasting IT. It&apos;s HIM.&apos;
+	</p>
+	<p>
+		&lsquo;I don&apos;t know what you mean,&rsquo; said Alice.
+	</p>
+	<p>
+		&lsquo;Of course you don&apos;t!&rsquo; the Hatter said, tossing his head contemptuously. &lsquo;I dare say you never even spoke to Time!&rsquo;
+	</p>
+	<p>
+		&lsquo;Perhaps not,&rsquo; Alice cautiously replied: &lsquo;but I know I have to beat time when I learn music.&rsquo;
+	</p>
+	<p>
+		&lsquo;Ah! that accounts for it,&rsquo; said the Hatter. &lsquo;He won&apos;t stand beating. Now, if you only kept on good terms with him, he&apos;d do almost anything you liked with the clock. For instance, suppose it were nine o&apos;clock in the morning, just time to begin lessons: you&apos;d only have to whisper a hint to Time, and round goes the clock in a twinkling! Half-past one, time for dinner!&rsquo;
+	</p>
+	<p>
+		(&lsquo;I only wish it was,&rsquo; the March Hare said to itself in a whisper.)
+	</p>
+	<p>
+		&lsquo;That would be grand, certainly,&rsquo; said Alice thoughtfully: &lsquo;but then&mdash;I shouldn&apos;t be hungry for it, you know.&rsquo;
+	</p>
+	<p>
+		&lsquo;Not at first, perhaps,&rsquo; said the Hatter: &lsquo;but you could keep it to half-past one as long as you liked.&rsquo;
+	</p>
+	<p>
+		&lsquo;Is that the way YOU manage?&rsquo; Alice asked.
+	</p>
+	<p>
+		The Hatter shook his head mournfully. &lsquo;Not I!&rsquo; he replied. &lsquo;We quarrelled last March&mdash;just before HE went mad, you know&mdash;&rsquo; (pointing with his tea spoon at the March Hare,) &lsquo;&mdash;it was at the great concert given by the Queen of Hearts, and I had to sing
+	</p>
+	<pre xml:space="preserve">
+	 &rdquo;Twinkle, twinkle, little bat!
+	 How I wonder what you&apos;re at!&rdquo;
+	</pre>
+	<p>
+		You know the song, perhaps?&rsquo;
+	</p>
+	<p>
+		&lsquo;I&apos;ve heard something like it,&rsquo; said Alice.
+	</p>
+	<p>
+		&lsquo;It goes on, you know,&rsquo; the Hatter continued, &lsquo;in this way:&mdash;
+	</p>
+	<pre xml:space="preserve">
+	 &rdquo;Up above the world you fly,
+	 Like a tea-tray in the sky.
+			 Twinkle, twinkle&mdash;&rdquo;&rsquo;
+	</pre>
+	<p>
+		Here the Dormouse shook itself, and began singing in its sleep &lsquo;Twinkle, twinkle, twinkle, twinkle&mdash;&rsquo; and went on so long that they had to pinch it to make it stop.
+	</p>
+	<p>
+		&lsquo;Well, I&apos;d hardly finished the first verse,&rsquo; said the Hatter, &lsquo;when the Queen jumped up and bawled out, &rdquo;He&apos;s murdering the time! Off with his head!&rdquo;&rsquo;
+	</p>
+	<p>
+		&lsquo;How dreadfully savage!&rsquo; exclaimed Alice.
+	</p>
+	<p>
+		&lsquo;And ever since that,&rsquo; the Hatter went on in a mournful tone, &lsquo;he won&apos;t do a thing I ask! It&apos;s always six o&apos;clock now.&rsquo;
+	</p>
+	<p>
+		A bright idea came into Alice&apos;s head. &lsquo;Is that the reason so many tea-things are put out here?&rsquo; she asked.
+	</p>
+	<p>
+		&lsquo;Yes, that&apos;s it,&rsquo; said the Hatter with a sigh: &lsquo;it&apos;s always tea-time, and we&apos;ve no time to wash the things between whiles.&rsquo;
+	</p>
+	<p>
+		&lsquo;Then you keep moving round, I suppose?&rsquo; said Alice.
+	</p>
+	<p>
+		&lsquo;Exactly so,&rsquo; said the Hatter: &lsquo;as the things get used up.&rsquo;
+	</p>
+	<p>
+		&lsquo;But what happens when you come to the beginning again?&rsquo; Alice ventured to ask.
+	</p>
+	<p>
+		&lsquo;Suppose we change the subject,&rsquo; the March Hare interrupted, yawning. &lsquo;I&apos;m getting tired of this. I vote the young lady tells us a story.&rsquo;
+	</p>
+	<p>
+		&lsquo;I&apos;m afraid I don&apos;t know one,&rsquo; said Alice, rather alarmed at the proposal.
+	</p>
+	<p>
+		&lsquo;Then the Dormouse shall!&rsquo; they both cried. &lsquo;Wake up, Dormouse!&rsquo; And they pinched it on both sides at once.
+	</p>
+	<p>
+		The Dormouse slowly opened his eyes. &lsquo;I wasn&apos;t asleep,&rsquo; he said in a hoarse, feeble voice: &lsquo;I heard every word you fellows were saying.&rsquo;
+	</p>
+	<p>
+		&lsquo;Tell us a story!&rsquo; said the March Hare.
+	</p>
+	<p>
+		&lsquo;Yes, please do!&rsquo; pleaded Alice.
+	</p>
+	<p>
+		&lsquo;And be quick about it,&rsquo; added the Hatter, &lsquo;or you&apos;ll be asleep again before it&apos;s done.&rsquo;
+	</p>
+	<p>
+		&lsquo;Once upon a time there were three little sisters,&rsquo; the Dormouse began in a great hurry; &lsquo;and their names were Elsie, Lacie, and Tillie; and they
+		lived at the bottom of a well&mdash;&rsquo;
+	</p>
+	<p>
+		&lsquo;What did they live on?&rsquo; said Alice, who always took a great interest in questions of eating and drinking.
+	</p>
+	<p>
+		&lsquo;They lived on treacle,&rsquo; said the Dormouse, after thinking a minute or two.
+	</p>
+	<p>
+		&lsquo;They couldn&apos;t have done that, you know,&rsquo; Alice gently remarked; &lsquo;they&apos;d have been ill.&rsquo;
+	</p>
+	<p>
+		&lsquo;So they were,&rsquo; said the Dormouse; &lsquo;VERY ill.&rsquo;
+	</p>
+	<p>
+		Alice tried to fancy to herself what such an extraordinary ways of living would be like, but it puzzled her too much, so she went on: &lsquo;But why did they live at the bottom of a well?&rsquo;
+	</p>
+	<p>
+		&lsquo;Take some more tea,&rsquo; the March Hare said to Alice, very earnestly.
+	</p>
+	<p>
+		&lsquo;I&apos;ve had nothing yet,&rsquo; Alice replied in an offended tone, &lsquo;so I can&apos;t take more.&rsquo;
+	</p>
+	<p>
+		&lsquo;You mean you can&apos;t take LESS,&rsquo; said the Hatter: &lsquo;it&apos;s very easy to take MORE than nothing.&rsquo;
+	</p>
+	<p>
+		&lsquo;Nobody asked YOUR opinion,&rsquo; said Alice.
+	</p>
+	<p>
+		&lsquo;Who&apos;s making personal remarks now?&rsquo; the Hatter asked triumphantly.
+	</p>
+	<p>
+		Alice did not quite know what to say to this: so she helped herself to some tea and bread-and-butter, and then turned to the Dormouse, and repeated her question. &lsquo;Why did they live at the bottom of a well?&rsquo;
+	</p>
+	<p>
+		The Dormouse again took a minute or two to think about it, and then said, &lsquo;It was a treacle-well.&rsquo;
+	</p>
+	<p>
+		&lsquo;There&apos;s no such thing!&rsquo; Alice was beginning very angrily, but the Hatter and the March Hare went &lsquo;Sh! sh!&rsquo; and the Dormouse sulkily remarked, &lsquo;If you can&apos;t be civil, you&apos;d better finish the story for yourself.&rsquo;
+	</p>
+	<p>
+		&lsquo;No, please go on!&rsquo; Alice said very humbly; &lsquo;I won&apos;t interrupt again. I dare say there may be ONE.&rsquo;
+	</p>
+	<p>
+		&lsquo;One, indeed!&rsquo; said the Dormouse indignantly. However, he consented to go on. &lsquo;And so these three little sisters&mdash;they were learning to draw, you know&mdash;&rsquo;
+	</p>
+	<p>
+		&lsquo;What did they draw?&rsquo; said Alice, quite forgetting her promise.
+	</p>
+	<p>
+		&lsquo;Treacle,&rsquo; said the Dormouse, without considering at all this time.
+	</p>
+	<p>
+		&lsquo;I want a clean cup,&rsquo; interrupted the Hatter: &lsquo;let&apos;s all move one place on.&rsquo;
+	</p>
+	<p>
+		He moved on as he spoke, and the Dormouse followed him: the March Hare moved into the Dormouse&apos;s place, and Alice rather unwillingly took the place of the March Hare. The Hatter was the only one who got any advantage from the change: and Alice was a good deal worse off than before, as the March Hare had just upset the milk-jug into his plate.
+	</p>
+	<p>
+		Alice did not wish to offend the Dormouse again, so she began very cautiously: &lsquo;But I don&apos;t understand. Where did they draw the treacle from?&rsquo;
+	</p>
+	<p>
+		&lsquo;You can draw water out of a water-well,&rsquo; said the Hatter; &lsquo;so I should think you could draw treacle out of a treacle-well&mdash;eh, stupid?&rsquo;
+	</p>
+	<p>
+		&lsquo;But they were IN the well,&rsquo; Alice said to the Dormouse, not choosing to notice this last remark.
+	</p>
+	<p>
+		&lsquo;Of course they were&rsquo;, said the Dormouse; &lsquo;&mdash;well in.&rsquo;
+	</p>
+	<p>
+		This answer so confused poor Alice, that she let the Dormouse go on for some time without interrupting it.
+	</p>
+	<p>
+		&lsquo;They were learning to draw,&rsquo; the Dormouse went on, yawning and rubbing its eyes, for it was getting very sleepy; &lsquo;and they drew all manner of things&mdash;everything that begins with an M&mdash;&rsquo;
+	</p>
+	<p>
+		&lsquo;Why with an M?&rsquo; said Alice.
+	</p>
+	<p>
+		&lsquo;Why not?&rsquo; said the March Hare.
+	</p>
+	<p>
+		Alice was silent.
+	</p>
+	<p>
+		The Dormouse had closed its eyes by this time, and was going off into a doze; but, on being pinched by the Hatter, it woke up again with a little shriek, and went on: &lsquo;&mdash;that begins with an M, such as mouse-traps, and the moon, and memory, and muchness&mdash;you know you say things are &ldquo;much of a muchness&rdquo;&mdash;did you ever see such a thing as a drawing of a muchness?&rsquo;
+	</p>
+	<p>
+		&lsquo;Really, now you ask me,&rsquo; said Alice, very much confused, &lsquo;I don&apos;t think&mdash;&rsquo;
+	</p>
+	<p>
+		&lsquo;Then you shouldn&apos;t talk,&rsquo; said the Hatter.
+	</p>
+	<p>
+		This piece of rudeness was more than Alice could bear: she got up in great disgust, and walked off; the Dormouse fell asleep instantly, and neither of the others took the least notice of her going, though she looked back once or twice, half hoping that they would call after her: the last time she saw them, they were trying to put the Dormouse into the teapot.
+	</p>
+	<p>
+		&lsquo;At any rate I&apos;ll never go THERE again!&rsquo; said Alice as she picked her way through the wood. &lsquo;It&apos;s the stupidest tea-party I ever was at in all my life!&rsquo;
+	</p>
+	<p>
+		Just as she said this, she noticed that one of the trees had a door leading right into it. &lsquo;That&apos;s very curious!&rsquo; she thought. &lsquo;But everything&apos;s curious today. I think I may as well go in at once.&rsquo; And in she went.
+	</p>
+	<p>
+		Once more she found herself in the long hall, and close to the little glass table. &lsquo;Now, I&apos;ll manage better this time,&rsquo; she said to herself, and began by taking the little golden key, and unlocking the door that led into the garden. Then she went to work nibbling at the mushroom (she had kept a piece of it in her pocket) till she was about a foot high: then she walked down the little passage: and THEN&mdash;she found herself at last in the beautiful garden, among the bright flower-beds and the cool fountains.
+	</p>
+</div>
+
+<div class="sources">
+	<ul class="source-list">
+		<li>Text from <a href="http://www.gutenberg.org/files/11/11-h/11-h.htm">Alice's Adventures in Wonderland</a> by Lewis Carroll</li>
+	</ul>
+</div>
+
+
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/visualize.jQuery.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

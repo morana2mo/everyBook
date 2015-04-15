@@ -1,0 +1,88 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Chapter 6: jQuery for Designers</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="jsOff">
+
+<div class="content">
+	<h1>Waterfalls of the World</h1>
+</div>
+
+<div class="cycle-slideshow"
+	data-cycle-slides="> div.slide"
+	data-cycle-pause-on-hover="true"
+	data-cycle-swipe="true"
+	data-cycle-overlay-template="<div class='headline'><h2>{{title}}</h2><p>{{desc}}</p></div>"
+	data-cycle-fx="tileSlide"
+	data-cycle-tile-count="9"
+	data-cycle-caption-plugin="caption2"
+	data-cycle-overlay-fx-sel=">div"
+	>
+	<div class="cycle-prev"></div>
+	<div class="cycle-next"></div>
+	<div class="cycle-overlay"></div>
+	 <div class="slide" data-cycle-title="Agua Azul" data-cycle-desc="Tumbal&aacute;, Chiapas, Mexico">
+		<a href="http://en.wikipedia.org/wiki/Agua_Azul">
+			<img src="images/AguaAzul.jpg">
+		</a>
+	</div>
+	<div class="slide" data-cycle-title="Burney Falls" data-cycle-desc="Shasta County, California, USA">
+		<a href="http://en.wikipedia.org/wiki/Burney_Falls">
+			<img src="images/BurneyFalls.jpg">
+		</a>
+	</div>
+	<div class="slide" data-cycle-title="Deer Leap Falls" data-cycle-desc="Dingmans Ferry, Pennsylvania, USA">
+		<a href="http://en.wikipedia.org/wiki/Deer_Leap_Falls">
+			<img src="images/Deer_Leap_Falls.jpg">
+		</a>
+	</div>
+	<div class="slide" data-cycle-title="Fulmer Falls" data-cycle-desc="Dingmans Ferry, Pennsylvania, USA">
+		<a href="http://en.wikipedia.org/wiki/Fulmer_Falls">
+			<img src="images/Fulmer_Falls.jpg">
+		</a>
+	</div>
+	<div class="slide" data-cycle-title="Hopetoun Falls" data-cycle-desc="Beech Forest, Victoria, Australia">
+		<a href="http://en.wikipedia.org/wiki/Hopetoun_Falls">
+			<img src="images/Hopetoun_Falls.jpg">
+		</a>
+	</div>
+	<div class="slide" data-cycle-title="Jonathan's Run" data-cycle-desc="Fayette County, Pennsylvania, USA">
+		<a href="http://en.wikipedia.org/wiki/Ohiopyle_State_Park">
+			<img src="images/Jonathans_Run.jpg">
+		</a>
+	</div>
+	<div class="slide" data-cycle-title="Manavgat Falls" data-cycle-desc="Manavgat, Antalya, Turkey">
+		<a href="http://en.wikipedia.org/wiki/Manavgat_River">
+			<img src="images/Manavgat.jpg">
+		</a>
+	</div>
+	<div class="slide" data-cycle-title="Niagara Falls" data-cycle-desc="New York, USA &amp; Ontario, Canada">
+		<a href="http://en.wikipedia.org/wiki/Niagara_Falls">
+			<img src="images/Niagara_Falls.jpg">
+		</a>
+	</div>
+</div>
+
+<div class="sources">
+	<h3>Sources:</h3>
+	<ul class="source-list">
+		<li><a href="http://commons.wikimedia.org/wiki/File:AguaAzulCalcifiedTree.jpg">Agua Azul</a> by <a href="http://www-01.sil.org/~tuggyd/pix/pix.htm">David Tiggy</a></li>
+		<li><a href="http://commons.wikimedia.org/wiki/File:BurneyFalls.jpg">Burney Falls</a> by <a href="http://commons.wikimedia.org/w/index.php?title=User:Agreene12&action=edit&redlink=1">Agreen12</a></li>
+		<li><a href="http://commons.wikimedia.org/wiki/File:Deer_Leap_Falls_Childs_Recreation_Area_3000px.jpg">Deer Leap Falls</a> by <a href="http://en.wikipedia.org/wiki/User:Ram-Man">Derek Ramsey</a></li>
+		<li><a href="http://commons.wikimedia.org/wiki/File:Fulmer_Falls_Closeup_3000px.jpg">Fulmer Falls</a>  by <a href="http://en.wikipedia.org/wiki/User:Ram-Man">Derek Ramsey</a></li>
+		<li><a href="http://commons.wikimedia.org/wiki/File:Hopetoun_falls.jpg">Hopetoun Falls</a> by <a href="http://en.wikipedia.org/wiki/User:Diliff">David Iliff</a></li>
+		<li><a href="http://commons.wikimedia.org/wiki/File:Jonathan%27s_Run_Falls.jpg">Jonathan's Run</a> by <a href="https://www.flickr.com/photos/whobee/">Hubert Stoffels</a></li>
+		<li><a href="http://commons.wikimedia.org/wiki/File:Manavgat_waterfall_by_tomgensler.JPG">Manavgat</a> by <a href="http://de.wikipedia.org/wiki/Benutzer:Tomgensler">Tom Gensler</a></li>
+		<li><a href="http://commons.wikimedia.org/wiki/File:Niagaraf%C3%A4lle_kanadische_Seite.jpg">Niagara Falls</a> by <a href="http://de.wikipedia.org/wiki/Benutzer:Mikano">Mikano</a></li>
+	</ul>
+</div>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.cycle2.min.js"></script>
+<script src="scripts/jquery.cycle2.tile.min.js"></script>
+<script src="scripts/jquery.cycle2.caption2.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

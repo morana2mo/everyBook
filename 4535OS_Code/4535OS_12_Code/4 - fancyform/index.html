@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 12: jQuery for Designers</title>
+	<link rel="stylesheet" href="styles/font-awesome.css">
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<form action="#" id="pretty-form">
+
+	<fieldset>
+		<legend>Select your favorite juice</legend>
+		<p>
+			<label for="juice">Favorite Juice</label>
+			<select id="juice" name="juice">
+				<option>Select one&hellip;</option>
+				<option value="orange">Orange Juice</option>
+				<option value="grape">Grape Juice</option>
+				<option value="grapefruit">Grapefruit Juice</option>
+				<option value="cranberry">Cranberry Juice</option>
+				<option value="tomato">Tomato Juice</option>
+				<option value="pineapple">Pineapple Juice</option>
+				<option value="apple">Apple Juice</option>
+			</select>
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>Fruit Picture</legend>
+		<p>
+			<label for="fruit-photo">Upload a photo of your favorite fruit</label>
+			<input type="file" id="fruit-photo" name="fruit-photo"/>
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>Which hot beverages do you enjoy?</legend>
+		<ul>
+			<li>
+				<input type="checkbox" name="hot-bevs[]" id="hot-coffee">
+				<label for="hot-coffee">Coffee</label>
+			</li>
+			<li>
+				<input type="checkbox" name="hot-bevs[]" id="hot-chocolate">
+				<label for="hot-chocolate">Hot Chocolate</label>
+			</li>
+			<li>
+				<input type="checkbox" name="hot-bevs[]" id="hot-tea">
+				<label for="hot-tea">Tea</label>
+			</li>
+		</ul>
+	</fieldset>
+
+	<fieldset>
+		<legend>Select your favorite soft drink</legend>
+		<ul>
+			<li>
+				<input type="radio" name="soft-drinks" id="soda"/>
+				<label for="soda">Soda</label>
+			</li>
+			<li>
+				<input type="radio" name="soft-drinks" id="sparkling-water"/>
+				<label for="sparkling-water">Sparkling water</label>
+			</li>
+			<li>
+				<input type="radio" name="soft-drinks" id="iced-tea"/>
+				<label for="iced-tea">Iced Tea</label>
+			</li>
+			<li>
+				<input type="radio" name="soft-drinks" id="lemonade"/>
+				<label for="lemonade">Lemonade</label>
+			</li>
+		</ul>
+	</fieldset>
+
+	<fieldset>
+		<legend>Some other stuff about me</legend>
+		<p>
+			<label for="name">My name</label>
+			<input type="text" id="name" name="name"/>
+		</p>
+		<p>
+			<label for="about-me">About me</label>
+			<textarea rows="10" cols="40" id="about-me" name="about-me"></textarea>
+		</p>
+	</fieldset>
+	<p class="buttons">
+		<input type="submit"/>
+		<input type="reset"/>
+	</p>
+
+</form>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.fancyform.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

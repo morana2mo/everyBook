@@ -1,0 +1,526 @@
+/* Reset --------------------------------------------------------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+	 v2.0 | 20110126
+	 License: none (public domain)
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /Reset -------------------------------------------------------------------------------------- */
+
+/* Elements ------------------------------------------------------------------------------------ */
+
+body {
+	background: #3b2f33;
+	color: #f2eeef;
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+	font-size: 100%;
+	margin: 1em auto;
+	padding: 0 1em;
+	max-width: 58em;
+}
+
+a {
+	color: #a0d468;
+}
+
+/* /Elements ----------------------------------------------------------------------------------- */
+
+/* Basic Typography ---------------------------------------------------------------------------- */
+
+.content p {
+	line-height: 1.5;
+	margin: 1.125em 0;
+}
+
+.content h3 {
+	font-size: 1.5em;
+	line-height: 1.125;
+	margin: 1.125em 0 0.5em 0;
+}
+
+.content h2 {
+	font-size: 2.25em;
+	line-height: 1.125;
+	margin: 1.125em 0 0.5em 0;
+}
+
+.content h1 {
+	font-size: 3.375em;
+	line-height: 1.125;
+	margin: 1.125em 0 0.5em 0;
+}
+
+.content ul {
+	list-style-type: circle;
+	margin: 1em;
+}
+
+.content ul li {
+	margin: 0.444em 0 0.444em 1em;
+}
+
+/* /Basic Typography --------------------------------------------------------------------------- */
+
+/* Navigation ---------------------------------------------------------------------------------- */
+
+nav {
+	margin: 2em 0;
+}
+
+nav ul {
+	background: #fff;
+	border-radius: 7px;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: block;
+	color: #444;
+	padding: 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: #a0d468;
+}
+
+/* /Navigation --------------------------------------------------------------------------------- */
+
+/* Sources ------------------------------------------------------------------------------------- */
+
+
+.sources {
+	color: #6a555c;
+	margin-top: 2.25em;
+}
+
+.sources h3 {
+	margin-bottom: 1.125em;
+}
+
+.sources a {
+	color: #6a555c;
+}
+
+.sources a:hover {
+	color: #7d646c;
+}
+
+.source-list {
+	line-height: 1.5;
+}
+
+/* /Sources ------------------------------------------------------------------------------------ */
+
+/* Forms --------------------------------------------------------------------------------------- */
+
+fieldset {
+	background: white;
+	border-radius: 5px;
+	color: #656d78;
+	margin: 1em 0;
+	padding: 1em;
+	width: 80%;
+}
+
+legend {
+	background: #fa6f57;
+	border-radius: 5px;
+	color: white;
+	font-size: 1.125em;
+	padding: 0.333em 1em;
+}
+
+fieldset fieldset {
+	border: 1px solid #;
+}
+
+fieldset fieldset legend {
+	background: transparent;
+	color: #42b0d8;
+	padding: 0;
+}
+
+fieldset p {
+	line-height: 1.5em;
+	margin: 1em 0;
+}
+
+fieldset label {
+	display: inline-block;
+	width: 20%;
+}
+
+fieldset label.error {
+	color: #e75845;
+	display: none;
+	margin-left: 0.5em;
+	width: auto;
+}
+
+fieldset li {
+	line-height: 1.5;
+	margin: 0.5em 0;
+}
+
+fieldset ul label {
+	display: inline;
+	width: auto;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='url'],
+input[type='email'],
+input[type='date'],
+input[type='number'] {
+	border: 1px solid #ccd1d9;
+	border-radius: 5px;
+	color: #656d78;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.222em;
+	-webkit-transition: border 300ms;
+	-moz-transition: border 300ms;
+	-ms-transition: border 300ms;
+	-o-transition: border 300ms;
+	transition: border 300ms;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='email']:focus,
+input[type='date']:focus,
+input[type='number']:focus {
+	border-color: #656d78;
+	outline: none;
+}
+
+input[type='submit'] {
+	background: #8dc059;
+	border: 0 none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.333em 1em;
+	-webkit-transition: background 300ms;
+	-moz-transition: background 300ms;
+	-ms-transition: background 300ms;
+	-o-transition: background 300ms;
+	transition: background 300ms;
+}
+
+input[type='submit']:hover {
+	background: #a1d36e;
+}
+
+textarea {
+	border: 1px solid #ccd1d9;
+	border-radius: 5px;
+	color: #656d78;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.333em;
+	-webkit-transition: border 300ms;
+	-moz-transition: border 300ms;
+	-ms-transition: border 300ms;
+	-o-transition: border 300ms;
+	transition: border 300ms;
+}
+
+textarea:focus {
+	border-color: #656d78;
+	outline: none;
+}
+
+input[type='reset'] {
+	background: #ccd1d9;
+	border: 0 none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.333em 1em;
+	-webkit-transition: background 300ms;
+	-moz-transition: background 300ms;
+	-ms-transition: background 300ms;
+	-o-transition: background 300ms;
+	transition: background 300ms;
+}
+
+input[type='reset']:hover {
+	background: #a5aebc;
+}
+
+/* /Forms -------------------------------------------------------------------------------------- */
+
+/* Fancyforms ---------------------------------------------------------------------------------- */
+
+/* Select */
+
+.transformSelect {
+	display: inline-block;
+	vertical-align: middle;
+	width: 200px;
+}
+
+.transformSelect li {
+	margin: 0;
+	position: relative;
+}
+
+.transformSelect > li > span {
+	background: white;
+	border: 1px solid #ccd1d9;
+	border-radius: 5px;
+	color: #656d78;
+	cursor: pointer;
+	display: block;
+	left: 0;
+	line-height: 20px;
+	margin: 0;
+	overflow: hidden;
+	padding: 3px 5px;
+	text-overflow: ellipsis;
+	top: 0;
+	white-space: nowrap;
+}
+
+.transformSelect > li > span:before {
+	border-left: 1px solid #ccd1d9;
+	bottom: 4px;
+	content: '';
+	position: absolute;
+	right: 2em;
+	top: 4px;
+}
+
+.transformSelect > li > span:after {
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 10px solid #ccd1d9;
+	content: '';
+	height: 0;
+	margin-top: -4px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	width: 0;
+}
+
+.transformSelect li.open > span {
+	border-radius: 5px 5px 0 0;
+}
+
+.transformSelectDropdown {
+	background: white;
+	border: 1px solid #ccd1d9;
+	border-radius: 0 0 5px 5px;
+	border-top: 0;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+	position: absolute;
+	width: 198px;
+}
+
+.transformSelectDropdown span {
+	cursor: pointer;
+	display: block;
+	padding: 0.222em 0.5em;
+}
+
+.transformSelectDropdown span:hover {
+	background: #ccecf8;
+}
+
+.transformSelectDropdown li:last-child span {
+	border-radius: 0 0 5px 5px;
+}
+
+/* /Select */
+
+/* File */
+
+.customInput {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.customInput:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.inputPath {
+	border: 1px solid #ccd1d9;
+	border-right: 0 none;
+	border-radius: 5px 0 0 5px;
+	color: #656d78;
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 0.222em;
+	-webkit-transition: border 300ms;
+	-moz-transition: border 300ms;
+	-ms-transition: border 300ms;
+	-o-transition: border 300ms;
+	transition: border 300ms;
+	width: 188px;
+}
+
+.customInputMouseOver .inputPath {
+	border-color: #addf7a;
+}
+
+.inputButton {
+	background: #a1d36e;
+	border: 1px solid #a1d36e;
+	border-radius: 0 5px 5px 0;
+	color: white;
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 0.222em 0.75em;
+	-webkit-transition: background 300ms;
+	-moz-transition: background 300ms;
+	-ms-transition: background 300ms;
+	-o-transition: background 300ms;
+	transition: background 300ms;
+}
+
+.custonInputMouseOver .inputButton {
+	background: #addf7a;
+}
+
+/* /File */
+
+/* Checkbox */
+
+.trans-element-checkbox {
+	border: 1px solid #ccd1d9;
+	border-radius: 3px;
+	display: inline-block;
+	height: 1em;
+	margin: 0 0.5em 0 0;
+	position: relative;
+	vertical-align: text-bottom;
+	width: 1em;
+}
+
+.trans-element-checkbox.checked {
+	background-color: #ccecf8;
+	border-color: #55c1e7;
+}
+
+.trans-element-checkbox.checked:before {
+	content: '\f00c';
+	font-family: 'FontAwesome';
+	height: 1em;
+	left: 50%;
+	margin: -0.7em 0 0 -0.5em;
+	position: absolute;
+	top: 50%;
+	width: 1em;
+}
+
+/* /Checkbox */
+
+/* Radio */
+
+.trans-element-radio {
+	border: 1px solid #ccd1d9;
+	border-radius: 50%;
+	display: inline-block;
+	height: 1em;
+	margin: 0 0.5em 0 0;
+	position: relative;
+	vertical-align: text-bottom;
+	width: 1em;
+}
+
+.trans-element-radio.checked {
+	border-color: #55c1e7;
+}
+
+.trans-element-radio.checked:before {
+	color: #55c1e7;
+	content: '\f111';
+	font-family: 'FontAwesome';
+	font-size: 0.8em;
+	height: 1em;
+	left: 50%;
+	line-height: 1;
+	margin: -0.45em 0 0 -0.5em;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 1em;
+}
+
+/* /Radio */
+
+
+/* /Fancyforms --------------------------------------------------------------------------------- */
+

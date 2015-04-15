@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Chapter 3: jQuery for Designers</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="jsOn">
+	<div class="content">
+		 <h1>Q1</h1>
+		 <dl>
+		 	<dt>NO.1</dt>
+		 	<dd>
+		 		<p>hello</p>
+		 	</dd>
+		 	<dt>NO.2</dt>
+		 	<dd>
+		 		<p>hi</p>
+		 	</dd>
+		 </dl>
+	</div>
+	<script type="text/javascript" src="scripts/jQuery.js"></script>
+	<script type="text/javascript">
+    $('dt').on('click',function(){
+	$(this).toggleClass('open').next().slideToggle();
+})
+	</script>
+</body>

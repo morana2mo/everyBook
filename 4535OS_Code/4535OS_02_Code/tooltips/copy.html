@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/jquery.powertip.css">
+</head>
+<body>
+	<header class="content">
+		  <h1>Pittsburgh, Pennsylvania</h1>
+		  <p>City of Bridges, Steel City, City of Champions, The 'Burgh</p>
+	</header>  
+	<nav>
+    <ul>
+      <li><a href="#pb-gallery" title="View photos of Pittsburgh">Photo Gallery</a></li>
+      <li><a href="#pb-about" title="Read about Pittsburgh">About</a></li>
+      <li><a href="#pb-geography" title="Learn about Pittsburg's geography">Geography</a></li>
+      <li><a href="#pb-moreinfo" title="Get more info about Pittsburgh">More Information</a></li>
+    </ul>
+  </nav>
+  <script src="jquery.js"></script>
+  <script src="jquery.powertip.min.js"></script>
+  <script type="text/javascript">
+$(document).ready(function(){
+  /* Add tooltips to navigation */
+  $('nav a').powerTip({
+    popupId: 'navTip'
+  });
+
+  /* Add text tooltips to photos */
+  $('.gallery img').powerTip({
+    placement: 'sw-alt',
+    followMouse: false
+  });
+
+  /* Add new content to text links */
+  $('.info-box')
+    .on( 'click', function(e) {
+      e.preventDefault();
+    })
+    .powerTip({
+      placement: 'e',
+      mouseOnToPopup: true,
+      smartPlacement: true,
+      popupId: 'infoTip'
+    });
+});
+  </script>
+</body>

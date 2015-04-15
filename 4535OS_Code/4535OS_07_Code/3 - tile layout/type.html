@@ -1,0 +1,554 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Chapter 7: Tiled Layout</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <style type="text/css">
+     .cat{ 
+     	background: white;
+     	border-radius: 5px;
+     	color: #434a54;
+     	margin: 5% 0;
+     	vertical-align: top;
+     	width: 100%;
+     }
+     @media (min-width: 30em) { 
+      .container{ 
+   		font-size: 0.75em;
+     }
+     .cat { 
+     	display: inline-block;
+     	margin: 3% 1%;
+     	width: 44%;
+     }
+     .cat w2{ 
+     	width: 61%;
+     }
+
+     }
+     @media (min-width: 45em) { 
+     	.cat{ 
+     		margin: 2% 1%;
+     		width: 30%;
+     	}
+     	.cat w2{ 
+     		width: 61%;
+     	}
+    @media (min-width: 60em) { 
+    	.container { 
+    		font-size: 1em;
+    	}
+    }
+    .cat img{ 
+    	border-radius: 5px 5px 0 0;
+    	height: auto;
+    	width: 100%;
+    }
+    .cat figure{ 
+    	position: relative;
+    }
+    .cat figcaption{ 
+    	background: linear-gradient(to buttom,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    	border-radius: 5px 5px 0 0 ;
+    	position: absolute;
+    	top:0;width: 100%;
+    }
+    .cat figcaption h2{ 
+    	color: white;
+    	font-size: 2.25em;
+    	margin: 0;
+    	padding: 0.25em;
+    }
+    .cat .info{ 
+    	display: table;
+    	width: 100%;
+    }
+    .cat .traits{ 
+    	display: table-row;
+    }
+    .cat .traits dl{ 
+    	display: table-cell;
+    	line-height: 1.125;
+    	padding: 1em 0.5em;
+    	text-align: center;
+    	vertical-align: top;
+    	width: 33%;
+    }
+    .cat .traits dt{ 
+    	color: #aab2bd;
+    	font-size: 0.75em;
+    }
+    .cat .traits dd{ 
+		font-size:1.125em; 
+    }
+     }
+
+  </style>
+</head>
+<body>
+	<div class="content">
+	     <h1>world</h1>
+	</div>
+	<ul class="container">
+		<li class="cat gridsize">
+		<figure>
+			<img src="images/siamese.jpg">
+			<figcaption>
+				<h2>Siamese</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Thailand</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Colorpoint</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/maine-coon.jpg">
+			<figcaption>
+				<h2>Maine Coon</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>United States</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Long</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>All</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/himalayan.jpg">
+			<figcaption>
+				<h2>Himalayan</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>United Kingdom</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Long</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Colorpoint</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/mekong-bobtail.jpg">
+			<figcaption>
+				<h2>Mekong Bobtail</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Russia</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Colorpoint</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/sphynx.jpg">
+			<figcaption>
+				<h2>Sphynx</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Canada</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Hairless</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>All</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/brazilian-shorthair.jpg">
+			<figcaption>
+				<h2>Brazilian Shorthair</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Brazil</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>All</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/birman.jpg">
+			<figcaption>
+				<h2>Birman</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Burma</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Long</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Colorpoint</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/singapura.jpg">
+			<figcaption>
+				<h2>Singapura</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Singapore</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Ticked</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/persian.jpg">
+			<figcaption>
+				<h2>Persian</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Iran</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Long</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>All</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/american-curl.jpg">
+			<figcaption>
+				<h2>American Curl</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>United States</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short or Long</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>All</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/american-shorthair.jpg">
+			<figcaption>
+				<h2>American Shorthair</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>none (natural)</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>All</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/asian.jpg">
+			<figcaption>
+				<h2>Asian</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>United Kingdom</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Solid</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/abyssinian.jpg">
+			<figcaption>
+				<h2>Abyssinian</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Egypt</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Ticked</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/chartreux.jpg">
+			<figcaption>
+				<h2>Chartreux</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>France</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Solid</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/savannah.jpg">
+			<figcaption>
+				<h2>Savannah</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>United States</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Spotted</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/norwegian-forest.jpg">
+			<figcaption>
+				<h2>Norwegian Forest</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Norway</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Long</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>All</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/khao-manee.jpg">
+			<figcaption>
+				<h2>Khao Manee</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>Thailand</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Short</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Solid</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+	<li class="cat">
+		<figure>
+			<img src="images/ragdoll.jpg">
+			<figcaption>
+				<h2>Ragdoll</h2>
+			</figcaption>
+		</figure>
+		<div class="info">
+			<div class="traits">
+				<dl>
+					<dt>Country</dt>
+					<dd>United States</dd>
+				</dl>
+				<dl>
+					<dt>Coat</dt>
+					<dd>Long</dd>
+				</dl>
+				<dl>
+					<dt>Pattern</dt>
+					<dd>Colorpoint</dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+
+
+	</ul>
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/masonry.pkgd.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+	$('.container').masonry({
+		columnWidth: '.gridsize',
+		itemSelector: '.cat'
+	});
+});pt>
+</body>

@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Chapter 6: jQuery for Designers</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+	<div class="content">
+	<h1>Waterfalls of the World</h1>
+	<ul id="crossfade">
+	<li><a href="images/AguaAzul.jpg"><img src="images/AguaAzul.jpg"></a></li>
+	<li><a href="images/BurneyFalls.jpg"><img src="images/BurneyFalls.jpg"></a></li>
+	<li><a href="images/Deer_Leap_Falls.jpg"><img src="images/Deer_Leap_Falls.jpg"></a></li>
+	<li><a href="images/Fulmer_Falls.jpg"><img src="images/Fulmer_Falls.jpg"></a></li>
+	<li><a href="images/Hopetoun_Falls.jpg"><img src="images/Hopetoun_Falls.jpg"></a></li>
+	<li><a href="images/Jonathans_Run.jpg"><img src="images/Jonathans_Run.jpg"></a></li>
+	<li><a href="images/Manavgat.jpg"><img src="images/Manavgat.jpg"></a></li>
+	<li><a href="images/Niagara_Falls.jpg"><img src="images/Niagara_Falls.jpg"></a></li>
+</ul>
+	</div>
+	<script src="scripts/jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		slider=$('#crossfade');
+		slider.find('li').hide().filter(':first').show();
+		setInterval(slideshow,300);
+
+	    });
+	var slider;
+	function slideshow(){
+		slider.find('li:first').fadeOut('slow').next().fadeIn('alow').end().append(slider);
+	}
+  
+    	
+    	
+
+	</script>
+</body>
